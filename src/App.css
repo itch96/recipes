@@ -1,13 +1,13 @@
 .myHeading {
   text-align: center;
-  font-size: 200%;
+  font-size: 180%;
   font-family: 'Great Vibes';
 }
 .add {
   position: fixed;
   right: 5%;
   bottom: 5%;
-  font-size: 80px;
+  font-size: 70px;
   color: deeppink;
   text-shadow: 3px 3px 5px black;
 }
@@ -23,30 +23,33 @@
 .item {
   font-family: 'Raleway';
   width: 70vw;
-  min-height: 80px;
+  max-width: 500px;
+  min-height: 70px;
   margin: 50px auto;
   box-shadow: 2px 2px 5px black;
 background: #56ab2f;  /* fallback for old browsers */
 background: -webkit-linear-gradient(270deg, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(270deg, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 color: white;
 }
 .itemHeading {
-  font-size: 90%;
+  font-size: 80%;
   width: 70%;
-  height: 60px;
+  height: 50px;
   padding-top: 20px;
   display: inline-block;
+}
+.fa-chevron-down, .fa-chevron-up {
+  font-size: 70%;
 }
 .delete {
   background-color: #e53935;
   color: white;
   width: 30%;
-  max-width: 100px;
+  max-width: 80px;
   float: right;
   padding-top: 20px;
-  height: 60px;
+  height: 50px;
 }
 .delete:hover {
   background-color: #ef5350;
@@ -59,10 +62,11 @@ color: white;
 } 
 ul {
   text-align: left;
-  font-size: 70%;
+  font-size: 60%;
   list-style: disc;
 }
 .editItem {
+  font-size: 80%;
   background-color: #03A9F4;
   color: white;
 }
@@ -97,10 +101,10 @@ input[name='ingredients'] {
   width: 300px;
 }
 button {
-  width: 120px;
-  height: 40px;
+  width: 100px;
+  height: 30px;
   margin-left: 20px;
-  font-size: 60%;
+  font-size: 50%;
   border: none;
   border-radius: 100px;
   color: white;
