@@ -1,0 +1,112 @@
+.myHeading {
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Great Vibes';
+}
+.add {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  font-size: 80px;
+  color: deeppink;
+  text-shadow: 3px 3px 5px black;
+}
+.add:hover {
+  animation: rotate 500ms ease-in-out forwards;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(180deg);
+    text-shadow: -3px -3px 5px black;
+  }
+}
+.item {
+  font-family: 'Raleway';
+  width: 70vw;
+  min-height: 80px;
+  margin: 50px auto;
+  box-shadow: 3px 3px 10px black;
+}
+.itemHeading {
+  font-size: 110%;
+  width: 70%;
+  height: 100px;
+  padding-top: 40px;
+  display: inline-block;
+}
+.delete {
+  background-color: #f44336;
+  color: white;
+  width: 30%;
+  max-width: 100px;
+  float: right;
+  padding-top: 50px;
+  height: 90px;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+} 
+ul {
+  text-align: left;
+  font-size: 80%;
+  padding-left: 10px;
+  list-style: none;
+}
+.editItem {
+  background-color: #03A9F4;
+  color: white;
+}
+.editIcon {
+  padding-right: 20px;
+}
+.newRecipe {
+  margin: 0 auto;
+}
+label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 70%;
+}
+input {
+  border: none;
+  border-bottom: 1px solid red;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 50%;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+input[name='name'] {
+  width: 150px;
+}
+input[name='ingredients'] {
+  width: 300px;
+}
+button {
+  width: 150px;
+  height: 40px;
+  margin-left: 20px;
+  font-size: 70%;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  box-shadow: 2px 2px 7px black;
+  background: #834d9b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, #d04ed6, #834d9b);
+  background: -moz-linear-gradient(45deg, #d04ed6, #834d9b);
+  background: -o-linear-gradient(45deg, #d04ed6, #834d9b);
+  background: linear-gradient(45deg, #d04ed6, #834d9b);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+button:hover {
+  box-shadow: none;
+  text-shadow: 2px 2px 7px black;
+  background: #834d9b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(-45deg, #d04ed6, #834d9b);
+  background: -moz-linear-gradient(-45deg, #d04ed6, #834d9b);
+  background: -o-linear-gradient(-45deg, #d04ed6, #834d9b);
+  background: linear-gradient(-45deg, #d04ed6, #834d9b);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
