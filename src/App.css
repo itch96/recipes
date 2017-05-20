@@ -25,23 +25,31 @@
   width: 70vw;
   min-height: 80px;
   margin: 50px auto;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 2px 2px 5px black;
+background: #56ab2f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(270deg, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(270deg, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+color: white;
 }
 .itemHeading {
-  font-size: 110%;
+  font-size: 90%;
   width: 70%;
-  height: 100px;
-  padding-top: 40px;
+  height: 60px;
+  padding-top: 20px;
   display: inline-block;
 }
 .delete {
-  background-color: #f44336;
+  background-color: #e53935;
   color: white;
   width: 30%;
   max-width: 100px;
   float: right;
-  padding-top: 50px;
-  height: 90px;
+  padding-top: 20px;
+  height: 60px;
+}
+.delete:hover {
+  background-color: #ef5350;
 }
 .hide {
   display: none;
@@ -51,13 +59,15 @@
 } 
 ul {
   text-align: left;
-  font-size: 80%;
-  padding-left: 10px;
-  list-style: none;
+  font-size: 70%;
+  list-style: disc;
 }
 .editItem {
   background-color: #03A9F4;
   color: white;
+}
+.editItem:hover {
+  background-color: #4FC3F7;
 }
 .editIcon {
   padding-right: 20px;
@@ -67,7 +77,7 @@ ul {
 }
 label{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 70%;
+  font-size: 60%;
 }
 input {
   border: none;
@@ -87,10 +97,10 @@ input[name='ingredients'] {
   width: 300px;
 }
 button {
-  width: 150px;
+  width: 120px;
   height: 40px;
   margin-left: 20px;
-  font-size: 70%;
+  font-size: 60%;
   border: none;
   border-radius: 100px;
   color: white;

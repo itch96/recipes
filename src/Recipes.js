@@ -56,10 +56,14 @@ class Recipes extends React.Component {
     save() {
         var recipeName = $("#name").val();
         var recipeIngredients = $("#ingredients").val().split(',');
-        localStorage.setItem(recipeName, recipeIngredients);
-        this.setState({
-            items: this.getItems()
-        });
+        if(recipeName !== '' || (recipeIngredients.length === 1 && recipeIngredients[0] !== '')) {
+            var regex = new RegExp(' ', 'g');
+            recipeName = recipeName.replace(regex, '_');
+            localStorage.setItem(recipeName, recipeIngredients);
+            this.setState({
+                items: this.getItems()
+            });
+        }
         this.discard();
     }
     render() {
